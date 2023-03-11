@@ -2,7 +2,7 @@
 - hosts: ubuntunode
   become: yes
   tasks:
-  - name: i wnat to install apachge2
+  - name: i want to install apache2
     apt:
       name: apache2
       status: present
