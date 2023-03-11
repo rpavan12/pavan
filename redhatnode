@@ -1,0 +1,12 @@
+---
+- hosts: redhatnode
+  become: yes
+  tasks:
+  - name: i want to install httpd
+    yum:
+     name: httpd
+     state: present
+  - name: start the httpd service
+    service:
+     name: httpd
+     state: started
