@@ -1,0 +1,12 @@
+---
+- hosts: ubuntunode
+  become: yes
+  tasks:
+  - name: i wnat to install apachge2
+    apt:
+      name: apache2
+      status: present
+  - name: start the service
+    service:
+      name: apache2
+      state: started
